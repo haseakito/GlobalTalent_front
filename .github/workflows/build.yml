@@ -49,7 +49,10 @@ jobs:
                 FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
                 FIREBASE_STORAGE_BUCKET: ${{ secrets.FIREBASE_STORAGE_BUCKET }}
                 FIREBASE_MESSAGING_SENDER_ID: ${{ secrets.FIREBASE_MESSAGING_SENDER_ID }}
-                FIREBASE_APP_ID: ${{ secrets.FIREBASE_APP_ID }}                
+                FIREBASE_APP_ID: ${{ secrets.FIREBASE_APP_ID }}
+                NEXT_PUBLIC_SERVICE_ID: ${{ secrets.NEXT_PUBLIC_SERVICE_ID }}
+                NEXT_PUBLIC_TEMPLATE_ID: ${{ secrets.NEXT_PUBLIC_TEMPLATE_ID }}
+                NEXT_PUBLIC_PUBLIC_API_KEY: ${{ secrets.NEXT_PUBLIC_PUBLIC_API_KEY }}
               run: |
                 npm run build
 
