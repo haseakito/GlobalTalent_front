@@ -10,3 +10,11 @@ export type LoginFormProps = {
     email: string,
     password: string
 }
+
+// type for contact form
+export type ContactFormProps = {
+    name: string,
+    email: string,
+    organization?: string,
+    contact: string
+}
