@@ -40,3 +40,15 @@ export const LoginFormSchema = z.object({
                             message: 'Password must contain at least one special character'
                         })
 })
+
+// Schema for contact form
+export const ContactFormSchema = z.object({
+    name: z.string().nonempty(),
+    email: z.string().email({
+        message: 'Does not match the email format'
+    }).nonempty(),
+    organization: z.string().optional(),
+    contact: z.string().min(10, {
+        message: 'Contact must be longer than 10 characters'
+    })
+})
