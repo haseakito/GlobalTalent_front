@@ -26,7 +26,7 @@ export function SignupForm() {
 
     // Function handling submitting the user input
     const onSubmit: SubmitHandler<SignupFormProps> = async (e) => { 
-        console.log(e)
+        auth.signUpWithEmailAndPassword(e.email, e.password)
     }
     
 
