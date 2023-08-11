@@ -26,7 +26,7 @@ export  function LoginForm() {
 
     // Function handling submitting the user input
     const onSubmit: SubmitHandler<LoginFormProps> = async (e) => { 
-        console.log(e)
+        auth.LogInWithEmailAndPassword(e.email, e.password)
     }
 
   return (

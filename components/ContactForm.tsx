@@ -33,10 +33,10 @@ export function ContactForm() {
 
 
         if (service_Id !== undefined && template_Id !== undefined && public_key !== undefined && formRef.current !== null ) {
-
-            await emailjs.sendForm(service_Id, template_Id, formRef.current, public_key).then((result) => {
-                console.log(result.text)
-                window.alert('Contact sent Sucessfully')
+            await emailjs.sendForm(service_Id, template_Id, formRef.current, public_key).then((result) => {                
+                if (result.status == 200) {
+                    window.alert('Contact sent Sucessfully')
+                }
             }).catch((error) => {
                 console.log(error)
                 alert('Ooops something went wrong')

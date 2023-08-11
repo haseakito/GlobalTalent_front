@@ -1,5 +1,6 @@
 import { z } from 'zod'
 
+// Schema for sign up form
 export const SignupFormSchema = z.object({    
     email: z.string().email({
         message: 'Does not match the email format'
@@ -24,6 +25,7 @@ export const SignupFormSchema = z.object({
 })
 
 
+// Schema for login form
 export const LoginFormSchema = z.object({
     email: z.string().email({
         message: 'Does not match the email format'
