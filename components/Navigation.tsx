@@ -34,7 +34,7 @@ const HeaderData = [
 export const Navigation = () => (
     <motion.ul
         variants={variants}
-        className="py-10 lg:px-10 absolute top-24 w-60"
+        className="py-8 lg:px-10 absolute top-10 w-60"
     >
     { HeaderData.map((value, key) => (
         <MenuItem

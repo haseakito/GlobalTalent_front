@@ -5,15 +5,8 @@ import { useRouter } from 'next/navigation'
 import { useTheme } from 'next-themes'
 import { useAuth } from './auth/Auth'
 import { motion, useCycle } from "framer-motion"
-import Link from 'next/link'
-import {
-    Popover,
-    PopoverContent,
-    PopoverTrigger,
-} from "@/components/ui/popover"  
 import { 
-    MdSettings,
-    MdAccountCircle,
+    MdSettings,    
     MdLogout,
     MdSearch
 } from 'react-icons/md'
